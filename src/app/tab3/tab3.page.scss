@@ -1,0 +1,23 @@
+ion-header {
+  height: 25%;
+}
+ion-avatar {
+  margin: 0 auto;
+  width: 120px;
+  height: auto;
+}
+.imgAvatar {
+  border: solid 6px var(--ion-color-danger-shade);
+}
+.userClass {
+  position: relative;
+  top: 65%;
+  z-index: 99;
+}
+.listaPerfil {
+  position: relative;
+  top: 25%;
+}
+ion-icon {
+  color: var(--ion-color-danger);
+}

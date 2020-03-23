@@ -1,0 +1,7 @@
+{
+  "name": "meuMercado",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
