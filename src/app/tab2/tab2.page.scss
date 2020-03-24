@@ -3,8 +3,29 @@
   position: relative;
   left: 70%;
   margin-left: -40%; 
-  top: 6.66%;
+  top: 40px;
   height: 45px;
   border: 4px solid #eb445a;
   border-radius: 7px;
+}
+.lista-mercados {
+  position: relative;
+  top: 70px;
+  margin: 15px;
+  background-color: var(--ion-color-danger);
+}
+.lista-mercados > ion-item {
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.lista-mercados > ion-item > ion-label > h2 {
+  font-weight: bold;
+}
+.avatar-mercado {
+  width: 70px;
+  height: auto;
+
+}
+.texto-mercado {
+  margin-left: 3px;
 }

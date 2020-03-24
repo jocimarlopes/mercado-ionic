@@ -5,5 +5,16 @@
         Carrinho
       </ion-text>
   </ion-button>
+  <ion-list class="lista-mercados">
+    <ion-item *ngFor="let super of mercados">
+      <img class="avatar-mercado" src="assets/{{super.img}}">
+      <ion-label class="texto-mercado">
+        <h2>{{super.mercado}}</h2>
+        <h3>Entrega na cidade: {{super.cidade}}</h3>
+        <p>Valor mínimo de pedido: R${{super.valor}}</p>
+      </ion-label>
+      <ion-button slot="end" color="danger" routerLink="/lista">Entrar</ion-button>
+    </ion-item>
+</ion-list>
 
 </ion-content>
