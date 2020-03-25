@@ -16,7 +16,7 @@ export class ListaPage implements OnInit {
   ngOnInit() {
     
   }
-  async moveToFirst()
+  async moveToProdutos()
   {
     const modal = await this.modalCtrl.create({
      component: ProdutosPage

@@ -1,11 +1,18 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>produtos</ion-title>
+  <ion-toolbar color="danger">
+    <ion-back-button slot="start" defaultHref=""></ion-back-button>
+    <ion-title>Categorias</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
 
-  <ion-button (click)="moveToFirst()">Launch Modal</ion-button>
-
+<ion-content fullscreen color="light">
+  <ion-row>
+    <ion-col size="6">
+      <img (click)="moveToProdutos()" src="https://lh3.googleusercontent.com/proxy/BrwHB-iSbCIGSKJSgWxIB2mt0c5JkFFrn_4tjPKM_UvuOE3xljVQLb6dGlpsNEp1mRG0o93Ja-x6D2R4SsWClQcpXQf9dhbAHyqZyO4p86_PsskmSkDDdM56x6LMplPq31MkFKGEOcGM7GmHhOI" />
+    </ion-col>
+    <ion-col size="6">
+      <img (click)="moveToProdutos()" src="https://lh3.googleusercontent.com/proxy/BrwHB-iSbCIGSKJSgWxIB2mt0c5JkFFrn_4tjPKM_UvuOE3xljVQLb6dGlpsNEp1mRG0o93Ja-x6D2R4SsWClQcpXQf9dhbAHyqZyO4p86_PsskmSkDDdM56x6LMplPq31MkFKGEOcGM7GmHhOI" />
+    </ion-col>
+  </ion-row>
 </ion-content>
