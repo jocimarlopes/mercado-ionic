@@ -33,6 +33,10 @@ const routes: Routes = [
   {
     path: 'concluido',
     loadChildren: () => import('./mapa/concluido/concluido.module').then( m => m.ConcluidoPageModule)
+  },
+  {
+    path: 'produtos',
+    loadChildren: () => import('./mapa/produtos/produtos.module').then( m => m.ProdutosPageModule)
   }
 ];
 @NgModule({

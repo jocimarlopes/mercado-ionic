@@ -1,10 +1,18 @@
+<ion-header color="danger" class="ion-text-center">
+  <div class="userClass">
+    <ion-button class="goCarrinho" color="light">
+      <ion-icon slot="start" name="cart-outline" color="danger" class="goCarrinhoLogo"></ion-icon>
+        <ion-text color="danger">
+          Carrinho
+        </ion-text>
+    </ion-button>
+  </div>
+  <ion-list-header class="titulo-mercados">
+    <ion-label text-center>Selecione seu Mercado</ion-label>
+  </ion-list-header>
+</ion-header>
+
 <ion-content color="danger" [fullscreen]="true">
-  <ion-button class="goCarrinho" color="light">
-    <ion-icon slot="start" name="cart-outline" color="danger" class="goCarrinhoLogo"></ion-icon>
-      <ion-text color="danger">
-        Carrinho
-      </ion-text>
-  </ion-button>
   <ion-list class="lista-mercados">
     <ion-item *ngFor="let super of mercados">
       <img class="avatar-mercado" src="assets/{{super.img}}">
@@ -15,6 +23,6 @@
       </ion-label>
       <ion-button slot="end" color="danger" routerLink="/lista">Entrar</ion-button>
     </ion-item>
-</ion-list>
-
+  </ion-list>
+  <br>
 </ion-content>

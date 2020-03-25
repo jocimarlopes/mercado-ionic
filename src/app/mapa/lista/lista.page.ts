@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController,AlertController,ModalController } from '@ionic/angular';
+import { ProdutosPage } from '../produtos/produtos.page';
 
 @Component({
   selector: 'app-lista',
@@ -9,15 +11,18 @@ export class ListaPage implements OnInit {
 
   public items: Array<any>;
 
-  constructor() { }
+  constructor(private modalCtrl:ModalController,private alertCtrl:AlertController) { }
 
   ngOnInit() {
-    this.items = [
-        { nome: 'Arroz', valor: '4,49' },
-        { nome: 'Feijão', valor: '5,99' },
-        { nome: 'Macarrão Instantâneo', valor: '3,29' },
-        { nome: 'Bolachinha Oreo ', valor: '2,89' },
-        { nome: 'Bolachinha Trakinas', valor: '3,29' },
-    ];
+    
   }
+  async moveToFirst()
+  {
+    const modal = await this.modalCtrl.create({
+     component: ProdutosPage
+   });
+
+   return await modal.present();
+  }
+
 }

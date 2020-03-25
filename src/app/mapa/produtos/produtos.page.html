@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref=""></ion-back-button>
+    </ion-buttons>
+    <ion-button color="light" (click)="closeModal()">Fechar Categoria</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list padding>
+    <ion-item *ngFor="let item of items">
+      <ion-text>{{item.nome}}</ion-text>
+      <p slot="end">Valor: R${{item.valor}}</p>
+    </ion-item>
+  </ion-list>
+ 
+</ion-content>

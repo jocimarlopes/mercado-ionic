@@ -1,7 +1,14 @@
+ion-header {
+  height: 17%;
+}
+.userClass {
+  position: relative;
+  left: 50%;
+  margin-left: -41%;
+  top: 30%
+}
 .goCarrinho {
   width: 40%;
-  position: relative;
-  left: 70%;
   margin-left: -40%; 
   top: 40px;
   height: 45px;
@@ -9,8 +16,6 @@
   border-radius: 7px;
 }
 .lista-mercados {
-  position: relative;
-  top: 70px;
   margin: 15px;
   background-color: var(--ion-color-danger);
 }
@@ -28,4 +33,12 @@
 }
 .texto-mercado {
   margin-left: 3px;
+}
+.titulo-mercados {
+  font-size: 23px;
+  color: var(--ion-color-light) !important;
+  display:block;
+  text-align: center;
+  position: relative;
+  top: 28%;
 }
