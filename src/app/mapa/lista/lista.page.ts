@@ -9,11 +9,21 @@ import { ProdutosPage } from '../produtos/produtos.page';
 })
 export class ListaPage implements OnInit {
 
-  public items: Array<any>;
+  public categorias: Array<any>;
 
   constructor(private modalCtrl:ModalController,private alertCtrl:AlertController) { }
 
   ngOnInit() {
+    this.categorias= [
+      {nome: 'Grãos e Massas', cor: 'success', icon: '#'},
+      {nome: 'Biscoitos e Doces', cor: 'warning', icon: '#'},
+      {nome: 'Banheiro e Higiene', cor: 'primary', icon: '#'},
+      {nome: 'Limpeza e Outros', cor: 'tertiary', icon: '#'},
+      {nome: 'Grãos e Massas', cor: 'success', icon: '#'},
+      {nome: 'Biscoitos e Doces', cor: 'warning', icon: '#'},
+      {nome: 'Banheiro e Higiene', cor: 'primary', icon: '#'},
+      {nome: 'Limpeza e Outros', cor: 'tertiary', icon: '#'},
+    ]
     
   }
   async moveToProdutos()

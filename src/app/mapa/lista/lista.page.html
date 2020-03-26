@@ -7,12 +7,16 @@
 
 
 <ion-content fullscreen color="light">
-  <ion-row>
-    <ion-col size="6">
-      <img (click)="moveToProdutos()" src="https://lh3.googleusercontent.com/proxy/BrwHB-iSbCIGSKJSgWxIB2mt0c5JkFFrn_4tjPKM_UvuOE3xljVQLb6dGlpsNEp1mRG0o93Ja-x6D2R4SsWClQcpXQf9dhbAHyqZyO4p86_PsskmSkDDdM56x6LMplPq31MkFKGEOcGM7GmHhOI" />
-    </ion-col>
-    <ion-col size="6">
-      <img (click)="moveToProdutos()" src="https://lh3.googleusercontent.com/proxy/BrwHB-iSbCIGSKJSgWxIB2mt0c5JkFFrn_4tjPKM_UvuOE3xljVQLb6dGlpsNEp1mRG0o93Ja-x6D2R4SsWClQcpXQf9dhbAHyqZyO4p86_PsskmSkDDdM56x6LMplPq31MkFKGEOcGM7GmHhOI" />
-    </ion-col>
-  </ion-row>
+  <ion-button *ngFor="let categoria of categorias" color="{{ categoria.cor }}" class="categorias" (click)="moveToProdutos()" text-center>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+          <ion-icon class="cart-icon" color="light" name="cart-outline"></ion-icon>
+        </ion-col>
+        <ion-col size="12">
+          <p class="nome-categoria">{{ categoria.nome }}</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-button>
 </ion-content>
